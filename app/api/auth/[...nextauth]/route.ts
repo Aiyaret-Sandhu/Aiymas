@@ -11,7 +11,7 @@ const generateStrongPassword = () => {
   return crypto.randomBytes(16).toString('hex');
 };
 
-export const authOptions: AuthOptions = {
+const authOptions: AuthOptions = {
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_ID!,
